@@ -1,6 +1,23 @@
+<div>
+  <h2>Call to action {{ section.settings['cta-title'] }}</h2>
+  <p>New {{ collection.title }} is out! {{ section.settings['cta-text'] }}</p>
+</div>
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Call To Action",
+  "settings": [
+    {
+      "id": "cta-title",
+      "type": "text",
+      "label": "Title",
+      "default": "Call Us Now"
+    },
+    {
+      "id": "cta-text",
+      "type": "textarea",
+      "label": "Text",
+      "default": "Enter text here"
+    }
+  ]
+}
 {% endschema %}
